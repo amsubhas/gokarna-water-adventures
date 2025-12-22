@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import Contact from '../../components/Contact.astro';
+const { title, description, image } = Astro.props;
+---
+
+<Layout title="Kayaking | Gokarna Water Adventures" description="Paddle through the calm waters and mangroves of Gokarna with our kayaking adventures. A perfect blend of adventure and tranquility.">
+  <Navbar />
+  
+  <div class="relative h-[60vh] overflow-hidden">
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+        <source src="/videos/gokarna-boat-cruise-service-tadadi.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center relative z-10">
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Kayaking</h1>
+        <p class="text-xl md:text-2xl mb-8">Explore the hidden gems of Gokarna's coastline at your own pace.</p>
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <img src="/images/kayaking-gokarna-tadadi-backwaters.jpg" alt="Person kayaking in Gokarna backwaters" class="rounded-lg shadow-xl w-full h-auto object-cover">
+        </div>
+        <div class="w-full md:w-1/2 md:pl-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Kayaking?</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Kayaking is a fantastic way to explore the serene backwaters, mangroves, and hidden coves of Gokarna.
+            It's an eco-friendly and peaceful activity that allows you to get closer to nature.
+            Whether you prefer a solo adventure or a tandem ride with a partner, kayaking offers a unique perspective of the coastal landscape and its diverse ecosystem.
+          </p>
+          <ul class="list-disc list-inside text-gray-600 mb-6">
+            <li>Eco-friendly way to explore</li>
+            <li>Suitable for beginners and experienced paddlers</li>
+            <li>Single and tandem kayaks available</li>
+            <li>Explore mangroves and calm waters</li>
+          </ul>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Book Your Kayak</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">What to Expect</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Duration</h3>
+          <p class="text-gray-600">Kayaking sessions typically last for 1 to 2 hours, giving you ample time to explore.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Difficulty Level</h3>
+          <p class="text-gray-600">Our kayaking routes are mostly in calm waters, making it easy for beginners to learn and enjoy.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Scenery</h3>
+          <p class="text-gray-600">Paddle through lush mangroves, spot local bird species, and enjoy the tranquility of nature.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+  <Footer />
+
+  <a href="tel:9844801435" id="offer-button" class="fixed bottom-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-4 rounded-full shadow-2xl hover:from-yellow-500 hover:to-orange-600 transition duration-300 z-50 flex items-center space-x-4 transform hover:scale-105">
+    <div class="flex flex-col">
+      <span class="text-xs font-bold uppercase tracking-wider">Limited Period Offer</span>
+      <div class="flex items-baseline space-x-2">
+        <span class="text-lg line-through text-gray-700">1499/-</span>
+        <span id="offer-price" class="text-3xl font-extrabold text-white drop-shadow-sm">799/-*</span>
+      </div>
+      <span class="text-xs font-medium text-white bg-red-600 px-2 py-0.5 rounded-full mt-1 w-max">Save 47% Today!</span>
+    </div>
+    <div class="flex flex-col items-center justify-center bg-white bg-opacity-20 p-2 rounded-lg backdrop-blur-sm">
+      <span class="text-xs font-semibold text-white">Offer Ends In:</span>
+      <span id="timer" class="text-xl font-mono font-bold text-white tabular-nums drop-shadow-sm">20:00</span>
+    </div>
+    <div class="animate-bounce bg-white p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </a>
+
+  <script>
+    const offerPriceElement = document.getElementById('offer-price');
+    const timerDisplay = document.getElementById('timer');
+    const duration = 20 * 60 * 1000; 
+    const now = new Date().getTime();
+    let endTime = localStorage.getItem('offerEndTimeActivity');
+
+    if (!endTime || now > parseInt(endTime)) {
+        endTime = now + duration;
+        localStorage.setItem('offerEndTimeActivity', endTime);
+    }
+
+    function updateTimer() {
+        const currentTime = new Date().getTime();
+        const distance = parseInt(endTime) - currentTime;
+
+        if (distance < 0) {
+            clearInterval(interval);
+            if(timerDisplay) timerDisplay.innerHTML = "00:00";
+            if(offerPriceElement) offerPriceElement.innerHTML = "999/-*";
+        } else {
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if(timerDisplay) timerDisplay.innerHTML = minutes + "m " + seconds + "s ";
+        }
+    }
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+  </script>
+</Layout>

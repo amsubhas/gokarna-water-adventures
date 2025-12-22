@@ -1,0 +1,140 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import Contact from '../../components/Contact.astro';
+const { title, description, image } = Astro.props;
+---
+
+<Layout title="Snorkeling | Gokarna Water Adventures" description="Discover the vibrant underwater world of Gokarna with our guided snorkeling tours. Perfect for beginners and nature lovers.">
+  <Navbar />
+  
+  <div class="relative h-[60vh] overflow-hidden">
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+        <source src="/videos/gokarna-boat-cruise-service-tadadi.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center relative z-10">
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Snorkeling</h1>
+        <p class="text-xl md:text-2xl mb-8">Peek beneath the surface and marvel at the marine life.</p>
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <img src="/images/snorkeling-gokarna-paradise-beach.jpg" alt="Person snorkeling in clear water" class="rounded-lg shadow-xl w-full h-auto object-cover">
+        </div>
+        <div class="w-full md:w-1/2 md:pl-12">
+          <h2 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Snorkeling?</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Snorkeling is an easy and accessible way to explore the underwater beauty of Gokarna without the need for extensive training or heavy equipment.
+            Floating on the surface, you can observe colorful fish, vibrant coral reefs, and other fascinating marine creatures in their natural habitat.
+            Our guided tours ensure you visit the best spots and have a safe, enjoyable experience.
+          </p>
+          <ul class="list-disc list-inside text-gray-600 mb-6">
+            <li>No prior experience needed</li>
+            <li>All equipment provided (mask, snorkel, fins)</li>
+            <li>Guided tours to the best spots</li>
+            <li>Safe and fun for all ages</li>
+          </ul>
+          
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Book Your Snorkeling Trip</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">What to Expect</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Duration</h3>
+          <p class="text-gray-600">A typical snorkeling trip lasts about 1.5 to 2 hours, with plenty of time in the water.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Safety</h3>
+          <p class="text-gray-600">Life jackets are mandatory, and our guides are trained to ensure your safety throughout the trip.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Marine Life</h3>
+          <p class="text-gray-600">Expect to see a variety of colorful fish, corals, and maybe even sea turtles or dolphins on the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+  <Footer />
+
+  <a href="tel:9844801435" id="offer-button" class="fixed bottom-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-4 rounded-full shadow-2xl hover:from-yellow-500 hover:to-orange-600 transition duration-300 z-50 flex items-center space-x-4 transform hover:scale-105">
+    <div class="flex flex-col">
+      <span class="text-xs font-bold uppercase tracking-wider">Limited Period Offer</span>
+      <div class="flex items-baseline space-x-2">
+        <span class="text-lg line-through text-gray-700">1499/-</span>
+        <span id="offer-price" class="text-3xl font-extrabold text-white drop-shadow-sm">799/-*</span>
+      </div>
+      <span class="text-xs font-medium text-white bg-red-600 px-2 py-0.5 rounded-full mt-1 w-max">Save 47% Today!</span>
+    </div>
+    <div class="flex flex-col items-center justify-center bg-white bg-opacity-20 p-2 rounded-lg backdrop-blur-sm">
+      <span class="text-xs font-semibold text-white">Offer Ends In:</span>
+      <span id="timer" class="text-xl font-mono font-bold text-white tabular-nums drop-shadow-sm">20:00</span>
+    </div>
+    <div class="animate-bounce bg-white p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </a>
+
+  <script>
+    const offerPriceElement = document.getElementById('offer-price');
+    const timerDisplay = document.getElementById('timer');
+    const duration = 20 * 60 * 1000;
+    const now = new Date().getTime();
+    let endTime = localStorage.getItem('offerEndTimeActivity');
+
+    if (!endTime || now > parseInt(endTime)) {
+        endTime = now + duration;
+        localStorage.setItem('offerEndTimeActivity', endTime);
+    }
+
+    function updateTimer() {
+        const currentTime = new Date().getTime();
+        const distance = parseInt(endTime) - currentTime;
+
+        if (distance < 0) {
+            clearInterval(interval);
+            if(timerDisplay) timerDisplay.innerHTML = "00:00";
+            if(offerPriceElement) offerPriceElement.innerHTML = "999/-*";
+        } else {
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if(timerDisplay) timerDisplay.innerHTML = minutes + "m " + seconds + "s ";
+        }
+    }
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+  </script>
+</Layout>
