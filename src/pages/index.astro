@@ -591,7 +591,7 @@ import '../styles/global.css';
     <a href="tel:9844801435" id="floating-offer-link" class="fixed bottom-4 right-4 z-50 bg-yellow-400 text-blue-900 p-4 rounded-xl shadow-xl border-2 border-blue-900 hover:scale-105 transition-transform block cursor-pointer no-underline animate-pulse-border">
         <h4 id="timer-label" class="font-black text-red-600 text-xl mb-1">⚡ LIMITED OFFER</h4>
         <p class="font-bold text-lg leading-tight">3-Hours Complete Package</p>
-        <p id="offer-price" class="text-2xl font-black my-1">Book Now for ₹999/-* Only</p>
+        <p id="offer-price" class="text-2xl font-black my-1">Book Now for ₹699/-* Only</p>
         <div class="flex items-center justify-between mt-2">
              <p class="text-sm font-bold bg-white/50 rounded px-2 py-1 inline-block">Time Left: <span id="offer-timer" class="text-red-600 font-mono text-lg">10:00</span></p>
              <span class="font-bold text-blue-800 flex items-center gap-1">📞 Call to Claim</span>
@@ -625,8 +625,8 @@ import '../styles/global.css';
                 // clearInterval(timerInterval); // Optional: keep running or stop
                 if (timerDisplay) timerDisplay.textContent = "00:00";
                 if (offerPriceElement) {
-                     // Change price to 1299 on expiry
-                     offerPriceElement.innerHTML = 'Book Now for <span class="text-red-600">₹1299/-*</span>';
+                     // Change price to 699 on expiry
+                     offerPriceElement.innerHTML = 'Book Now for <span class="text-red-600">₹699/-*</span>';
                 }
                 if(timerLabel) timerLabel.textContent = "Offer Expired";
                 // Optional: Stop the pulsing border animation
